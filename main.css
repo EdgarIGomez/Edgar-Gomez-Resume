@@ -1,20 +1,161 @@
+body {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+
+}
 .resume_body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
 
 }
 
-#profile {
-    border: 3px solid red;
-    width: 25%;
+#profile {   /*Header with name job title contact and about me*/
+    border: 3px solid lightblue; /*borders are to make sure everything is in right place*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: lightblue;
+
+
 }
 
+#name {
+    font-size: 300%;
+    /*padding: 5px;*/
+    margin: 5px;
+}
+
+#job_title {
+    margin: 5px;
+    font-size: 30px;
+}
+
+#about_me {
+    text-align: center;
+    width: 66%;
+    margin: 8px;
+}
+
+.contact_me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact_me li {
+    list-style-type: none;
+    margin: 5px;
+}
 #main_body {
-    border: 3px solid blue;
-    width: 50%;
+    /*border: 8px solid lightblue;*/
+    display: flex;
+    width: 100%;
+    /*background-color: white;*/
+
 }
 
-#idk {
-    border: 3px solid yellow;
-    width: 25%;
+#skills {
+    border-right: 8px solid lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: white;
+
+}
+
+h3 {
+    margin: 5px;
+    font-size: 28px;
+}
+
+hr {
+    width: 60%;
+}
+
+#skill_list {
+
+}
+
+.past_experience {
+    font-weight: bold;
+}
+
+p {
+    width: 60%;
+    /*text-align: center;*/
+}
+
+#projects p{
+    /*text-align: center;*/
+}
+
+#skill_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#skill_list li {
+    list-style-type: none;
+    margin: 3px;
+}
+
+#projects {
+    border-left: 8px solid lightblue;
+    width: 50%;
+    /*text-align: center;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+
+}
+
+.degree {
+    margin: 15px;
+    font-style: italic;
+}
+
+/*#bottom {*/
+/*    margin-bottom: 15px;*/
+/*}*/
+
+@media screen and (max-width: 580px) {
+    #name {
+        font-size: 205%
+    }
+    .contact_me {
+        flex-direction: column;
+    }
+
+    #main_body {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #skills {
+        width: 95%;
+
+        border: 8px solid lightblue;
+    }
+
+    #projects {
+        width: 95%;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border: 8px solid lightblue;
+    }
 }
