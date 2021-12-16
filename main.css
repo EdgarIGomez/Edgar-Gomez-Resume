@@ -1,0 +1,20 @@
+.resume_body {
+    display: flex;
+    justify-content: center;
+
+}
+
+#profile {
+    border: 3px solid red;
+    width: 25%;
+}
+
+#main_body {
+    border: 3px solid blue;
+    width: 50%;
+}
+
+#idk {
+    border: 3px solid yellow;
+    width: 25%;
+}
